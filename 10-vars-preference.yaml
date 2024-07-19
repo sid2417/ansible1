@@ -7,9 +7,9 @@
     Fielder: "Akmal"
   vars_files:
   - vars.yaml
-  vars_prompt:
+  vars_promt:
   - name: Bowler
-    Prompt: "plese enter your bowler name"
+    prompt: "plese enter your bowler name"
   - name: Batter
     prompt: "plese enter your batter name"
   - name: Fielder
