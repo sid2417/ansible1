@@ -7,16 +7,16 @@
     Fielder: "Akmal"
   # vars_files:
   # - vars.yaml
-  vars_prompt:
-  - name: Bowler
-    prompt: "plese enter your bowler name"
-    private: false
-  - name: Batter
-    prompt: "plese enter your batter name"
-    private: false
-  - name: Fielder
-    prompt: "pelse enter your fielder name"
-    private: false
+  # vars_prompt:
+  # - name: Bowler
+  #   prompt: "plese enter your bowler name"
+  #   private: false
+  # - name: Batter
+  #   prompt: "plese enter your batter name"
+  #   private: false
+  # - name: Fielder
+  #   prompt: "pelse enter your fielder name"
+  #   private: false
   tasks:
   - name: task level variables
     # vars:
@@ -32,4 +32,5 @@
 # 1. Argument level variables
 # 2. Task Level 
 # 3. vars_files
-# 4. 
+# 4. vars_prompt
+# 5. 
