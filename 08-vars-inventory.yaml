@@ -8,5 +8,5 @@
     vars:
       Ground: "Uppal-stadium"
     ansible.builtin.debug:
-      msg: "Match at {{Ground}}, the final over of the {{Bowler}} the {{Batter}} caught by {{Fielder}} at 99 runs"
+      msg: "Match at {{Ground}}, the final over of the {{Bowler}}, the {{Batter}} caught by {{Fielder}} at 99 runs"
     
