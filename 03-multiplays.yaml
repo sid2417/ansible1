@@ -4,7 +4,7 @@
   tasks: 
   - name: First task
     ansible.builtin.debug:
-      msg: Hi this is my Frist message from TASK-1
+      msg: "Hi this is my Frist message from TASK-1"
 
 - name: second playbook
   hosts: localhost
@@ -12,4 +12,4 @@
   tasks: 
   - name: first task from second playbook
     ansible.builtin.debug:
-    msg: Hi I am from second palybook
+    msg: "Hi I am from second palybook"
