@@ -1,6 +1,6 @@
 - name: Just say Ansible Ping Pong play book
   host: localhost
-  become: yes
+  #become: yes
   tasks:
   - name: ping
     ansible.builtin.ping:
