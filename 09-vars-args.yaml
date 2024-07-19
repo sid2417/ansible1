@@ -1,0 +1,7 @@
+- name: Checking variables from arguments
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: printing variables from arguments
+    ansible.builtin.debug:
+      msg: "The final over of the {{Bowler}}, the {{Batter}} caught by {{Fielder}} at 99 runs"
