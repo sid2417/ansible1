@@ -12,7 +12,7 @@
       name: nginx
       state: present
     
-  -name: enabling nginx
+  - name: enabling nginx
     ansible.builtin.service:
       name: nginx
       enabled: yes
