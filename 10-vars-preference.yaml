@@ -5,8 +5,8 @@
     Bowler: "AmmerMd"
     Batter: "Afridi"
     Fielder: "Akmal"
-  vars_files:
-  - vars.yaml
+  # vars_files:
+  # - vars.yaml
   vars_prompt:
   - name: Bowler
     prompt: "plese enter your bowler name"
@@ -31,4 +31,5 @@
 
 # 1. Argument level variables
 # 2. Task Level 
-# 3. 
+# 3. vars_files
+# 4. 
