@@ -1,0 +1,24 @@
+- name: we are checking variables in preference manner
+  hosts: localhost
+  become: yes
+  vars:
+    Bowler: "AmmerMd"
+    Batter: "Afridi"
+    Fielder: "Akmal"
+  vars_files:
+  - vars.yaml
+  vars_prompt:
+  - name: Bowler
+    Prompt: "plese enter your bowler name"
+  - name: Batter
+    prompt: "plese enter your batter name"
+  - name: Fielder
+    prompt: "pelse enter your fielder name"
+  tasks:
+  - name: task level variables
+    vars:
+      Bowler: "Watson"
+      Batter: "Warner"
+      Fielder: "Finch"
+    ansible.builtin.debug:
+      msg: "The final over of the {{Bowler}}, the {{Batter}} caught by {{Fielder}} at 99 runs"

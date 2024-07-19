@@ -5,3 +5,11 @@
   - name: printing variables from arguments
     ansible.builtin.debug:
       msg: "The final over of the {{Bowler}}, the {{Batter}} caught by {{Fielder}} at 99 runs"
+
+
+      # While passing arguments use --extra-vars "Here you pass the values"
+      # other wise use -e "Here you pass the values"
+
+      #ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=DevOps321 09-vars-args.yaml --extra-vars "Bowler=Lee Batter=Sachin Fielder=Smith"
+
+      #ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=DevOps321 09-vars-args.yaml -e "Bowler=Lee Batter=Sachin Fielder=Smith"
