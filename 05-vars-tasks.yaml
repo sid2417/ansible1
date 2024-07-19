@@ -13,3 +13,7 @@
       Fielder: "collingwood"
     ansible.builtin.debug: # This is debug for printing messages # msg:
       msg: "The final over of the {{Bowler}}, the {{Batter}} caught by {{Fielder}} at 99 runs"
+  
+  - name: checking 
+    ansible.builtin.debug:
+      msg: "The final over of the {{Bowler}}, the {{Batter}} caught by {{Fielder}} at 99 runs"
