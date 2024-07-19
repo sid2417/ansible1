@@ -1,7 +1,7 @@
 - name: checking Promt level variables
   hosts: localhost
   become: yes
-  vars-prompt:
+  vars_prompt:
   - name: Bowler
     prompt: please enter your bowler Name
     private: false
