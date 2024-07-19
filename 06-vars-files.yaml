@@ -1,0 +1,9 @@
+- name: Checking variables from vars file
+  hosts: localhost
+  become: yes
+  vars_files:
+  - vars.yaml
+  tasks:
+  - name: variable information printing from vars file
+    ansible.builtin.debug:
+      msg: "The final over of the {{Bowler}}, the {{Batter}} caught by {{Fielder}} at 99 runs"

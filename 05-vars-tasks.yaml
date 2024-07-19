@@ -7,10 +7,10 @@
     Fielder: "Kaif"
   tasks:
   - name: checking variables in task level
-    vars:
+    vars: # if you are mention vars in task level, it is nth but overriding of variables
       Bowler: "Ameer Md"
-      Batter: "KaneWilliams"
-      Fielder: "collingwood"
+      Batter: "Kane"
+      Fielder: "Collingwood"
     ansible.builtin.debug: # This is debug for printing messages # msg:
       msg: "The final over of the {{Bowler}}, the {{Batter}} caught by {{Fielder}} at 99 runs"
   
