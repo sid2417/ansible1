@@ -1,13 +1,18 @@
-- name: Installing Nginx playbook
+- name: playbook for Nginx
   hosts: localhost
   become: yes
   tasks:
-  - name: Installing Nginx
+  - name: Installing nginx
     ansible.builtin.dnf:
       name: nginx
-      state: latest
-  - name: starting Nginx
+      state: present
+  
+  - name: starting nginx
     ansible.builtin.service:
       name: nginx
-      state: started
+      state: present
+    
+  -name: enabling nginx
+    ansible.builtin.service:
+      name: nginx
       enabled: yes
