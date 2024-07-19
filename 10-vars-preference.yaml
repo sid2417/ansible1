@@ -1,10 +1,10 @@
 - name: we are checking variables in preference manner
   hosts: localhost
   become: yes
-  vars:
-    Bowler: "AmmerMd"
-    Batter: "Afridi"
-    Fielder: "Akmal"
+  # vars:
+  #   Bowler: "AmmerMd"
+  #   Batter: "Afridi"
+  #   Fielder: "Akmal"
   # vars_files:
   # - vars.yaml
   # vars_prompt:
@@ -33,4 +33,5 @@
 # 2. Task Level 
 # 3. vars_files
 # 4. vars_prompt
-# 5. 
+# 5. vars / Normal variables/ Main variables
+# 6. 
