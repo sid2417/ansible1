@@ -10,10 +10,13 @@
   vars_prompt:
   - name: Bowler
     prompt: "plese enter your bowler name"
+    private: false
   - name: Batter
     prompt: "plese enter your batter name"
+    private: false
   - name: Fielder
     prompt: "pelse enter your fielder name"
+    private: false
   tasks:
   - name: task level variables
     vars:
