@@ -1,5 +1,5 @@
 - name: Just say Ansible Ping Pong play book
-  host: localhost
+  hosts: localhost
   #become: yes
   tasks:
   - name: ping
