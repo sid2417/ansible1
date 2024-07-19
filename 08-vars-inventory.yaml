@@ -1,6 +1,8 @@
 - name: Checking inventory variables
   hosts: localhost
   become: yes
+  vars:
+  
   tasks: 
   - name: printing inventory variables
     ansible.builtin.debug:
