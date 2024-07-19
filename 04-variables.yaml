@@ -6,7 +6,7 @@
     Fielder: "Kaif"
   tasks:
   - name: printing variables
-    ansble.builtin.debug:
+    ansible.builtin.debug:
       msg: "The final over of the {{Bowler}}, the {{Batter}} caught by {{Fielder}} at 99 runs"
       #In this ansible variable calls in this braces {{variable}}
 
