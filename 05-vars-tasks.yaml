@@ -1,0 +1,15 @@
+- name: checking variables in task level and vars level
+  hosts: localhost
+  become: yes
+  vars:
+    Bowler: "Styne"
+    Batter: "Miller"
+    Fielder: "Kaif"
+  tasks:
+  - name: checking variables in task level
+    ansible.builtin.debug: # This is debug for printing messages # msg:
+      vars:
+        Bowler: "Ameer Md"
+        Batter: "KaneWilliams"
+        Fielder: "collingwood"
+      msg: ""The final over of the {{Bowler}}, the {{Batter}} caught by {{Fielder}} at 99 runs""
