@@ -19,9 +19,16 @@
     private: false
   tasks:
   - name: task level variables
-    vars:
-      Bowler: "Watson"
-      Batter: "Warner"
-      Fielder: "Finch"
+    # vars:
+    #   Bowler: "Watson"
+    #   Batter: "Warner"
+    #   Fielder: "Finch"
     ansible.builtin.debug:
       msg: "The final over of the {{Bowler}}, the {{Batter}} caught by {{Fielder}} at 99 runs"
+
+
+
+
+# 1. Argument level variables
+# 2. Task Level 
+# 3. 
