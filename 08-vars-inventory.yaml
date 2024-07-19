@@ -1,10 +1,12 @@
 - name: Checking inventory variables
   hosts: localhost
   become: yes
-  vars:
-    Ground: "Uppal-stadium"
+  # vars:
+  #   Ground: "Uppal-stadium"
   tasks: 
   - name: printing inventory variables
+    vars:
+      Ground: "Uppal-stadium"
     ansible.builtin.debug:
       msg: "Match at {{Ground}}, the final over of the {{Bowler}} the {{Batter}} caught by {{Fielder}} at 99 runs"
     
