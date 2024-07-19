@@ -4,5 +4,5 @@
   tasks: 
   - name: printing inventory variables
     ansible.builtin.debug:
-      msg: "The final over of the {{Bowler}}, the {{Batter}} caught by {{Fielder}} at 99 runs"
+      msg: "The final over of the {{Bowler}} the {{Batter}} caught by {{Fielder}} at 99 runs"
     
