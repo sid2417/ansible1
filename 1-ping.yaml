@@ -1,0 +1,7 @@
+- name: Just say Ansible Ping Pong play book
+  host: web
+  become: yes
+  tasks:
+  - name: ping
+    ansible.builtin.ping:
+   
