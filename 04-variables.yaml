@@ -9,3 +9,31 @@
     ansble.builtin.debug:
       msg: "The final over of the {{Bowler}}, the {{Batter}} caught by {{Fielder}} at 99 runs"
       #In this ansible variable calls in this braces {{variable}}
+
+
+- name: Regarding Variables
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: ping pong
+    ansible.builtin.ping:
+
+
+- name: Regarding Nginx
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: Installing nginx
+    ansible.builtin.dnf:
+      name: nginx
+      state: latest
+  
+  - name: Staring Nginx
+    ansible.builtin.service:
+      name: nginx
+      state: started
+
+  - name: enabling nginx
+    ansible.nginx.service:
+      name: nginx
+      enabled: yes
