@@ -1,0 +1,19 @@
+- name: checking Promt level variables
+  hosts: localhost
+  become: yes
+  vars-prompt:
+  - name: Bowler
+    prompt: please enter your bowler Name
+    private: false
+  
+  - name: Batter
+    prompt: please enter your batter name
+    private: false
+
+  - name: Fielder
+    prompt: pelase enter your fielder name
+    private: false
+  tasks:
+  - name: printing promt level variables
+    ansible.builtin.debug:
+      msg: "The final over of the {{Bowler}}, the {{Batter}} caught by {{Fielder}} at 99 runs"
